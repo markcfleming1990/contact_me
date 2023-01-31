@@ -3,7 +3,7 @@ import React from "react";
 const Form = () => {
   return (
     <div>
-      <h1>Contact Form</h1>
+      <h1>Search Contacts</h1>
 
       <form>
         <label for="name">first name</label>
@@ -14,7 +14,7 @@ const Form = () => {
         <input type="text" placeholder="email address" name="email" />
         <label for="phone">phone</label>
         <input type="text" placeholder="phone" name="phone" />
-        <button type="submit">Submit</button>
+        <button type="submit">Search</button>
       </form>
     </div>
   );
