@@ -1,6 +1,6 @@
 import React from "react";
 
-const Nav = () => {
+const Form = () => {
   return (
     <div>
       <h1>Contact Form</h1>
@@ -20,4 +20,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Form;
