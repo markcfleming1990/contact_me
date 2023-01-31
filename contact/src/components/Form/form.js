@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
 
 function Form() {
@@ -82,7 +82,7 @@ function Form() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button type="submit">Search</button>
+        <button type="submit">Submit</button>
       </form>
     </div>
   );
