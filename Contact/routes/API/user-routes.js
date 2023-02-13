@@ -2,21 +2,18 @@ const router = require("express").Router();
 
 const {
   createUser,
-  getUserbyFirstName,
-  getUserbyLastName,
-  getUserbyEmail,
-  getUserByPhone,
-} = require("../controllers/userController");
+  // getUserbyFirstName,
+  // getUserbyLastName,
+  // getUserbyEmail,
+  // getUserByPhone,
+} = require("../../controllers/user-controller.js");
 
 //api/users
 
-router
-  .route("/")
-  .get(getUserbyID)
-  .get(getUserbyFirstName)
-  .get(getUserbyLastName)
-  .get(getUserbyEmail)
-  .get(getUserByPhone)
-  .post(createUser);
+router.route("/").post(createUser);
+// .get(getUserbyFirstName)
+// .get(getUserbyLastName)
+// .get(getUserbyEmail)
+// .get(getUserByPhone);
 
 module.exports = router;

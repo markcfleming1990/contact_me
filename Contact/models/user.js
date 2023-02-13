@@ -1,6 +1,6 @@
 const { Schema, model } = require("mongoose");
 
-const UserSchema = new Schema({
+const userSchema = new Schema({
   firstName: {
     type: String,
   },
@@ -9,12 +9,14 @@ const UserSchema = new Schema({
   },
   email: {
     type: String,
+    unique: true,
+    match: [/.+\@.+\..+/, "Must match an email address!"],
   },
   phone: {
     type: String,
   },
 });
 
-const User = model("User", UserSchema);
+const User = model("User", userSchema);
 
 module.exports = User;
